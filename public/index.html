@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <title>Wellness Wheel</title>
   <style>
     html, body, .viewport, #app {
@@ -13,14 +14,18 @@
       display: flex;
       font-family: Helvetica, Arial, sans-serif
     }
+
+    #root {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex: 1;
+    }
   </style>
 </head>
 
 <body>
   <div id="root"></div>
-  <noscript>
-    You need to enable JavaScript to run this app.
-  </noscript>
   <script src="../dist/bundle.js"></script>
 </body>
 
