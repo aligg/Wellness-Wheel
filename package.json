@@ -7,6 +7,8 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
+    "@material/react-drawer": "^0.7.0",
+    "mdi-react": "^5.0.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-favicon": "^0.0.14",

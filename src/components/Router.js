@@ -9,7 +9,7 @@ import React from "react";
 
 class Router extends React.Component {
 
-    render() {
+    render() { 
         return (
             <div
                 style={{
@@ -20,7 +20,7 @@ class Router extends React.Component {
             >
                 <Route
                     path="/"
-                    component={Header}
+                    render={(props) => <Header {...props} toggleDrawer={this.props.toggleDrawer}/>}
                 />
                 <div
                     style={{

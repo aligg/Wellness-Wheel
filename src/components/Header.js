@@ -1,11 +1,18 @@
+import * as theme from "../../public/static/theme.js"
 import React from "react";
+import MenuIcon from 'mdi-react/MenuIcon';
 
-const Header = () => {
+const Header = ({
+    toggleDrawer: toggleDrawer,
+}) => {
     return (
         <div>
-            Header
+            <MenuIcon
+                color={theme.colors.grey}
+                onClick={toggleDrawer}
+            />
         </div>
-    )
+    );
 }
 
 export default Header;
