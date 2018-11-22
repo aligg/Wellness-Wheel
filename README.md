@@ -11,4 +11,4 @@ I've added some issues for ideas on how you can contribute. Please feel free to 
 Feel free to update this README as we go along to help others get through spots where you may have struggled or noticed where the instructions could be more clear. Happy coding and thank you for contributing and being a part of this project! 
 
 # Happy Coding
-![](site.jpg)
+![](site.png)
