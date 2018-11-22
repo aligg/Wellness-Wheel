@@ -20,8 +20,8 @@ class Image extends React.Component {
                 <img
                     src={this.props.image.content}
                     style={{
-                        maxHeight: "80vh",
-                        maxWidth: "80vw",
+                        maxHeight: "90vh",
+                        maxWidth: "90vw",
                         boxShadow: theme.boxShadow,
                     }}
 

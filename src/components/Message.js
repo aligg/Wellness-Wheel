@@ -18,8 +18,10 @@ class Message extends React.Component {
         return (
             <div
                 style={{
-                    fontSize: "30px",
+                    fontSize: "10vw",
                     fontColor: theme.colors.blackish,
+                    maxWidth: "90vw",
+                    maxHeight: "90vh",
                 }}
             >
                 {this.props.item.content}
