@@ -8,7 +8,7 @@ const styles = {
     drawer: {
         width: "100vw",
         height: "100vh",
-        backgroundColor: "#1C7293",
+        backgroundColor: theme.colors.blue,
         position: "fixed",
         top: 0,
         left: 0,
@@ -24,7 +24,7 @@ const styles = {
         overflow: "hidden",
     },
     link: {
-        color: "#F45B69",
+        color: theme.colors.fuschia,
         marginLeft: "15px",
         textDecoration: "none",
         padding: theme.padding,

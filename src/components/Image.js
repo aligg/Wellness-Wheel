@@ -1,3 +1,4 @@
+import * as theme from "../../public/static/theme.js";
 import PropTypes from "prop-types";
 import React from "react";
 
@@ -21,6 +22,7 @@ class Image extends React.Component {
                     style={{
                         maxHeight: "80vh",
                         maxWidth: "80vw",
+                        boxShadow: theme.boxShadow,
                     }}
 
                 />
