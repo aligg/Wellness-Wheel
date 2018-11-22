@@ -6,6 +6,7 @@ import Home from "./Home";
 import Footer from "./Footer";
 import Header from "./Header";
 import React from "react";
+import About from "./About";
 
 class Router extends React.Component {
 
@@ -26,14 +27,18 @@ class Router extends React.Component {
                     style={{
                         flex: 1,
                         flexDirection: "column",
-                        display: "flex",
-                        backgroundColor: "red",
+                        display: "flex"
                     }}
                 >
                     <Route
                         path="/"
                         exact={true}
                         component={Home}
+                    />
+                    <Route
+                        path="/about"
+                        exact={true}
+                        component={About}
                     />
                 </div>
                 <Route

@@ -1,8 +1,7 @@
 import React from "react";
 import Router from "./Router";
 import {hot} from "react-hot-loader";
-import Drawer from "@material/react-drawer";
-import ExampleContent from "./ExampleContent";
+import Drawer from "./Drawer";
 
 
 class App extends React.Component{
@@ -20,7 +19,21 @@ class App extends React.Component{
         })
     }
 
-    render() { console.log(this.state.open)
+    handleClick = (e) => {
+        this.toggleDrawer();    
+        e.stopPropagation();
+    }
+
+    home = () => {
+        this.props.history.push("/")
+    }
+
+    about = () => {
+        console.log('about')
+        this.props.history.push("/about")
+    }
+
+    render() {
         return(
             <div
                 style={{
@@ -29,13 +42,11 @@ class App extends React.Component{
                 }}
             >
                 <Drawer
-                    modal={true}
-                    dismissible
                     open={this.state.open}
-                    onClose={() => this.setState({open: false})}
-                >
-                    <ExampleContent />
-                </Drawer>
+                    handleClick={this.handleClick}
+                    about={this.about}
+                    home={this.home}
+                />
                 <Router
                     toggleDrawer={this.toggleDrawer}
                 />
