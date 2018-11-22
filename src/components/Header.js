@@ -10,6 +10,8 @@ const Header = ({
             <MenuIcon
                 color={theme.colors.grey}
                 onClick={toggleDrawer}
+                size={30}
+                style={{cursor: "pointer"}}
             />
         </div>
     );

@@ -8,7 +8,7 @@ const styles = {
     drawer: {
         width: "100vw",
         height: "100vh",
-        backgroundColor: "#FFE600",
+        backgroundColor: "#1C7293",
         position: "fixed",
         top: 0,
         left: 0,
@@ -24,10 +24,15 @@ const styles = {
         overflow: "hidden",
     },
     link: {
-        color: "#333",
+        color: "#F45B69",
         marginLeft: "15px",
         textDecoration: "none",
         padding: theme.padding,
+        fontWeight: 600,
+        fontSize: "50px",
+    },
+    underline: {
+        textDecoration: "underline",
     }
 }
 
@@ -37,6 +42,23 @@ class Drawer extends React.Component {
     static propTypes = {
         open: PropTypes.bool.isRequired,
         handleClick: PropTypes.func.isRequired
+    }
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            hovered: null,
+        }
+    }
+
+    toggleHover = (name) => {
+        return () => {
+                (
+                this.setState({
+                    hovered: name,
+                })
+            )
+        }
     }
 
     render() {
@@ -59,14 +81,24 @@ class Drawer extends React.Component {
                 >
                     <Link
                         to="/"
-                        style={styles.link}
+                        style={this.state.hovered === "home" ? 
+                            {...styles.link, ...styles.underline} :
+                            {...styles.link}
+                        }
+                        onMouseOver={this.toggleHover("home")}
+                        onMouseOut={this.toggleHover(null)}
                     >
                         
                         Home
                     </Link>
                     <Link
                         to="/about"
-                        style={styles.link}
+                        style={this.state.hovered === "about" ? 
+                            {...styles.link, ...styles.underline} :
+                            {...styles.link}
+                        }
+                        onMouseOver={this.toggleHover("about")}
+                        onMouseOut={this.toggleHover(null)}
                     >
                         About
                     </Link>

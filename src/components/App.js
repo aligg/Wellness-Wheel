@@ -1,3 +1,4 @@
+import * as theme from "../../public/static/theme.js";
 import React from "react";
 import Router from "./Router";
 import {hot} from "react-hot-loader";
@@ -39,6 +40,7 @@ class App extends React.Component{
                 style={{
                     display: "flex",
                     flex: 1,
+                    padding: theme.padding * 2,
                 }}
             >
                 <Drawer
