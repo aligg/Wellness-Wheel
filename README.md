@@ -6,7 +6,9 @@ App built on React with the goal to inspire first time open source contributors 
 * Run `yarn install` to add needed dependencies
 * Run `yarn watch` to get the app running locally
 
-Feel free to update this README as we go along to help others get through spots where you may have struggled or noticed where the instructions could be more clear. Happy coding and thank you for contributing!
+I've added some issues for ideas on how you can contribute. Please feel free to file additional issues if you have more ideas.
+
+Feel free to update this README as we go along to help others get through spots where you may have struggled or noticed where the instructions could be more clear. Happy coding and thank you for contributing and being a part of this project! 
 
 # Happy Coding
 ![](site.jpg)
