@@ -6,6 +6,8 @@ export const wellMessages = [
     { type: "image", content: "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg"},
     { type: "image", content: "https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg"},
     { type: "image", content: "https://images.pexels.com/photos/207135/pexels-photo-207135.jpeg"},
-    { type: "image", content: "https://images.pexels.com/photos/426894/pexels-photo-426894.jpeg"},  
+    { type: "image", content: "https://images.pexels.com/photos/426894/pexels-photo-426894.jpeg"},
+    { type: "image", content: "https://images.pexels.com/photos/268283/pexels-photo-268283.jpeg"},
+    { type: "image", content: "https://images.pexels.com/photos/236606/pexels-photo-236606.jpeg"},
 ]
 

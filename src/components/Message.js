@@ -1,3 +1,4 @@
+import * as theme from "../../public/static/theme.js";
 import PropTypes from "prop-types";
 import React from "react";
 
@@ -15,7 +16,12 @@ class Message extends React.Component {
 
     render() {
         return (
-            <div>
+            <div
+                style={{
+                    fontSize: "30px",
+                    fontColor: theme.colors.blackish,
+                }}
+            >
                 {this.props.item.content}
             </div>
         )
