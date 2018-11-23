@@ -18,8 +18,8 @@ class Message extends React.Component {
         return (
             <div
                 style={{
-                    fontSize: "10vw",
-                    fontColor: theme.colors.blackish,
+                    fontSize: "5vw",
+                    color: theme.colors.blackish,
                     maxWidth: "90vw",
                     maxHeight: "90vh",
                 }}
