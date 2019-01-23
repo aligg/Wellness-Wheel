@@ -1,17 +1,15 @@
-import * as theme from "../../public/static/theme.js"
-import React from "react";
+import React from 'react';
+import * as theme from '../../public/static/theme';
 
-const Footer = () => {
-    return (
-        <div
-            style={{
-                color: theme.colors.grey,
-                fontSize: 12,
-            }}
-        >
+const Footer = () => (
+  <div
+    style={{
+      color: theme.colors.grey,
+      fontSize: 12,
+    }}
+  >
             breathe
-        </div>
-    )
-}
+  </div>
+);
 
 export default Footer;

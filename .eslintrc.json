@@ -1,0 +1,12 @@
+{
+    "extends": "airbnb",
+    "rules": {
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "react/forbid-prop-types": [true, {"forbid": ["any"] }],
+        "react/destructuring-assignment": [true, {"ignoreClassFields": true}]
+    },
+    "env": {
+        "browser": true
+    },
+    "parser": "babel-eslint"
+}

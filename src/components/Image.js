@@ -1,34 +1,23 @@
-import * as theme from "../../public/static/theme.js";
-import PropTypes from "prop-types";
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
+import * as theme from '../../public/static/theme';
 
-class Image extends React.Component {
+const Image = ({ image }) => (
+  <div>
+    <img
+      src={image.content}
+      alt="Chill"
+      style={{
+        maxHeight: '90vh',
+        maxWidth: '90vw',
+        boxShadow: theme.boxShadow,
+      }}
+    />
+  </div>
+);
 
-    static propTypes = {
-        image: PropTypes.object.isRequired,
-    }
-
-    constructor(props) {
-        super(props);
-        this.state = {
-        }
-    }
-
-    render() {
-        return (
-            <div>
-                <img
-                    src={this.props.image.content}
-                    style={{
-                        maxHeight: "90vh",
-                        maxWidth: "90vw",
-                        boxShadow: theme.boxShadow,
-                    }}
-
-                />
-            </div>
-        )
-    }
-}
+Image.propTypes = {
+  image: PropTypes.object.isRequired,
+};
 
 export default Image;
