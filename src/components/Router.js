@@ -46,7 +46,7 @@ const Router = ({toggleDrawer}) => {
 }
 
 Router.propTypes = {
-  toggleDrawer: PropTypes.func,
+  toggleDrawer: PropTypes.func.isRequired,
 };
 
 Router.defaultProps = {

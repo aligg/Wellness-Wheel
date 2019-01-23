@@ -17,7 +17,7 @@ const Header = ({
 );
 
 Header.propTypes = {
-  toggleDrawer: PropTypes.func,
+  toggleDrawer: PropTypes.func.isRequired,
 };
 
 export default Header;
