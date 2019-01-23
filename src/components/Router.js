@@ -9,7 +9,7 @@ import Footer from './Footer';
 import Header from './Header';
 import About from './About';
 
-function Router() {
+const Router = ({toggleDrawer}) => {
   return (
     <div
       style={{
@@ -18,10 +18,7 @@ function Router() {
         display: 'flex',
       }}
     >
-      <Route
-        path="/"
-        render={props => <Header {...props} toggleDrawer={props.toggleDrawer} />}
-      />
+      <Header toggleDrawer={toggleDrawer} />
       <div
         style={{
           flex: 1,
@@ -49,7 +46,11 @@ function Router() {
 }
 
 Router.propTypes = {
-  toggleDrawer: PropTypes.func.isRequired,
+  toggleDrawer: PropTypes.func,
+};
+
+Router.defaultProps = {
+  toggleDrawer: () => {}
 };
 
 
