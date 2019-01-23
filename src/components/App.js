@@ -19,8 +19,7 @@ class App extends React.Component {
   }
 
     toggleDrawer = () => {
-      //this.setState(prevState => ({ open: !prevState.open }));
-      this.setState({open: !this.state.open})
+      this.setState(prevState => ({ open: !prevState.open }));
     }
 
     handleClick = (e) => {
