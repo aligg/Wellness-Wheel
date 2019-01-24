@@ -1,33 +1,22 @@
-import * as theme from "../../public/static/theme.js";
-import PropTypes from "prop-types";
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
+import * as theme from '../../public/static/theme';
 
-class Message extends React.Component {
+const Message = ({ item }) => (
+  <div
+    style={{
+      fontSize: '5vw',
+      color: theme.colors.blackish,
+      maxWidth: '90vw',
+      maxHeight: '90vh',
+    }}
+  >
+    {item.content}
+  </div>
+);
 
-    static propTypes = {
-        item: PropTypes.object.isRequired,
-    }
-
-    constructor(props) {
-        super(props);
-        this.state = {
-        }
-    }
-
-    render() {
-        return (
-            <div
-                style={{
-                    fontSize: "5vw",
-                    color: theme.colors.blackish,
-                    maxWidth: "90vw",
-                    maxHeight: "90vh",
-                }}
-            >
-                {this.props.item.content}
-            </div>
-        )
-    }
-}
+Message.propTypes = {
+  item: PropTypes.object.isRequired,
+};
 
 export default Message;
