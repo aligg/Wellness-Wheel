@@ -3,7 +3,8 @@ export const colors = {
     blue: "#1C7293",
     sea: "#98B6B1",
     fuschia: "#D81159",
-    blackish: "#0D0221"
+    blackish: "#0D0221",
+    calmblue: "rgba(94, 119, 218, 0.69)",
 };
 
 export const padding = 10;

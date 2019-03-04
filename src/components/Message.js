@@ -6,7 +6,7 @@ const Message = ({ item }) => (
   <div
     style={{
       fontSize: '5vw',
-      color: theme.colors.blackish,
+      color: theme.colors.calmblue,
       maxWidth: '90vw',
       maxHeight: '90vh',
     }}
