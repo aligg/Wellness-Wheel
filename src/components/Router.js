@@ -8,6 +8,7 @@ import Home from './Home';
 import Footer from './Footer';
 import Header from './Header';
 import About from './About';
+import Quotes from './Quotes';
 
 const Router = ({ toggleDrawer }) => (
   <div
@@ -34,6 +35,11 @@ const Router = ({ toggleDrawer }) => (
         path="/about"
         exact
         component={About}
+      />
+      <Route
+        path="/quotes"
+        exact
+        component={Quotes}
       />
     </div>
     <Route
