@@ -100,6 +100,17 @@ class Drawer extends React.Component {
             >
                         About
             </Link>
+            <Link
+              to="/quotes"
+              style={this.state.hovered === 'quotes'
+                ? { ...styles.link, ...styles.underline }
+                : { ...styles.link }
+                        }
+              onMouseOver={this.toggleHover('quotes')}
+              onMouseOut={this.toggleHover(null)}
+            >
+                        Quotes
+            </Link>
           </div>
         </div>
       );

@@ -6,7 +6,7 @@ import * as theme from '../../public/static/theme';
 const Header = ({
   toggleDrawer,
 }) => (
-  <div style={{display : 'flex'}}>
+  <div style={{display : 'flex',justifyContent: 'space-between'}}>
     <MenuIcon
       color={theme.colors.grey}
       onClick={toggleDrawer}
@@ -16,8 +16,6 @@ const Header = ({
     <p style={{
       color: theme.colors.grey,
       fontSize: 12,
-      position : 'relative',
-      left : '96%'
     }}>calm</p>
   </div>
 );
