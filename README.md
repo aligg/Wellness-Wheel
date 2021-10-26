@@ -3,6 +3,17 @@ App built on React with the goal to inspire first time open source contributors 
 
 # Getting Started
 * Checkout the repository onto your local machine
+* Sign up to [Unsplash API](https://unsplash.com/documentation#creating-a-developer-account) to get access to keys
+* Create a secret.js file in the root directory
+* Use this template in the secret.js file:
+```
+const unsplashKeys = {
+  accessKey: '',
+  secretKey: '',
+};
+export { unsplashKeys };
+```
+* Copy and paste your access and secret keys into the empty strings in the file
 * Run `yarn install` to add needed dependencies
 * Run `yarn watch` to get the app running locally
 
